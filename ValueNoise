@@ -2,7 +2,7 @@
 #include <iostream>
 
 #define Pi 3.1415927f
-class PerlinNoise {
+class ValueNoise {
 
 
 
@@ -203,7 +203,7 @@ private:
 
 public:
 
-	PerlinNoise(int sizeX, int sizeY = 1)
+	ValueNoise(int sizeX, int sizeY = 1)
 	{
 		_sizeX = sizeX;
 		_sizeY = sizeY;
@@ -227,7 +227,7 @@ public:
 	}
 
 
-	~PerlinNoise()
+	~ValueNoise()
 	{
 		delete SeedArray;
 		delete NoiseArray;
